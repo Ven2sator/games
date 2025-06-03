@@ -1,5 +1,15 @@
-# Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+The user uses pygame to develop a complex 2D game with the following mechanics:
+- Movable red square (player)
+- Max. 5 yellow squares appear per click
+- Blue dots follow the player
+- On contact with player: green triangle appears randomly
+- Green triangle replaces the target of the blue dots
+- On reaching the triangle: both disappear, a blue square appears, chases the player, slows him down on contact
+- 4 blue squares → Player turns blue himself, movement blocked → Game over
+- Timer: Game over if no yellow square is collected for 30s
+- Green triangle can be 'fed' with yellow square → turns into a second red square
+- Second red square chases green triangles, slower than player
+- If player or 2nd red square touches the green triangle: +60s and protective shield for 2nd red square
+- Aim of the game: create a green triangle and become a blue square yourself
+- Map has alpha wall (soft boundary)
+- Score display counts collected yellow squares.
